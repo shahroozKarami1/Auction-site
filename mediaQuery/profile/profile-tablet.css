@@ -1,0 +1,8 @@
+.tls_sti-holder {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.img_disc-image {
+  height: 13rem;
+  width: 13rem;
+}

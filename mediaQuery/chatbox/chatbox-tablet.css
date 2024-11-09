@@ -1,0 +1,71 @@
+.header_chatbox nav {
+    align-items: flex-start;
+}
+
+.left_tls i {
+    font-size: var(--big-font-size);
+}
+
+.own-pro-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.left_inf .search {
+    width: 70%;
+}
+
+.n_right-hld {
+    padding: 0.4rem;
+}
+
+.other-pro-img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.ch_first_mode_detail {
+    height: 33rem;
+}
+
+.ch_second_mode_detail {
+    height: 33rem;
+}
+
+.re_chat-hld {
+    height: 28rem;
+}
+
+.ch_title label {
+    font-size: var(--big-font-size);
+    padding: 0.5rem 0.7rem;
+}
+
+.re_status-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.re_status-text {
+    width: 44rem;
+    font-size: var(--big-font-size);
+    margin: auto;
+}
+
+.re_status-like div input {
+    width: 6rem;
+    height: 1.5rem;
+    font-size: var(--small-font-size);
+}
+
+.re_chat-hld .chat p {
+    font-size: var(--big-font-size);
+}
+
+.re_chat-hld .chat span {
+    font-size: var(--big-font-size);
+}
+
+.chatbox_sendMessage {
+    width: 33rem;
+}

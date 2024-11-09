@@ -1,0 +1,42 @@
+.singUp_above {
+  width: 24rem;
+}
+
+.singUp_title-num::before {
+  width: 7rem;
+}
+
+.double_tick {
+  padding-left: 2rem;
+}
+
+.singUp_page-box.psw.showPassContainer {
+  transform: translateY(6.5rem);
+}
+
+.signUp_password-description {
+  width: 24rem;
+  height: 27.5rem;
+}
+
+.signUp_password-description .title-description {
+  font-size: var(--big-font-size);
+}
+
+.signUp_password-description .camel {
+  font-size: var(--small-font-size);
+}
+
+.signUp_password-description .generation h6 {
+  font-size: var(--big-font-size);
+}
+
+.signUp_password-description .generation .copy_generate {
+  font-size: var(--h2-font-size);
+  right: 3.5rem;
+}
+
+.popup {
+  width: 27rem;
+  font-size: var(--big-font-size);
+}

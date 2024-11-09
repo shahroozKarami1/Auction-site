@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ثبت نام</title>
+  <link rel="icon" href="../img/titles/register 32.jpg" sizes="32*32" />
+  <link rel="icon" href="../img/titles/register 64.jpg" sizes="64*64" />
+  <link rel="icon" href="../img/titles/register 128.jpg" sizes="128*128" />
+  <link rel="icon" href="../img/titles/register 256.jpg" sizes="256*256" />
+  <link rel="stylesheet" href="../js/swiper/package/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../font/font-awesome/fontawesome-free-6.4.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" media="screen and (min-width:501px) and (max-width:768px)"
+    href="../mediaQuery/signup/signup-smartPhone.css" />
+  <link rel="stylesheet" media="screen and (min-width:769px) and (max-width:1024px)"
+    href="../mediaQuery/signup/signup-tablet.css" />
+  <link rel="stylesheet" media="screen and (min-width:1025px)" href="../mediaQuery/signup/signup-wideSreen.css" />
+</head>
+
+<body>
+  <header class="singUp_header mb">
+    <h1>ثبت نام</h1>
+    <a class="sun_moon a_esc" href="#">
+      <i class="ri-moon-line" id="moon-button"></i>
+    </a>
+    <h4>خروج<span><i class="ri-expand-left-line"></i></span></h4>
+  </header>
+  <main>
+    <div class="singUp_container pb">
+      <section class="singUp_above">
+        <div class="singUp_title gr">
+          <div class="singUp_title-name">رمز ورود</div>
+          <div class="singUp_title-num"><span>3</span></div>
+        </div>
+        <div class="singUp_title gr">
+          <div class="singUp_title-name">اطلاعات تماس</div>
+          <div class="singUp_title-num"><span>2</span></div>
+        </div>
+        <div class="singUp_title gr">
+          <div class="singUp_title-name">مشخصات</div>
+          <div class="singUp_title-num"><span>1</span></div>
+        </div>
+      </section>
+      <section class="singUp_bellow pi swiper">
+        <form action="" class="swiper-wrapper">
+          <div class="singUp_page swiper-slide">
+            <h2 class="singUp_page-title">مشخصات فردی</h2>
+            <div class="singUp_page-group pb">
+              <div class="singUp_page-box">
+                <div class="singUp_page-box-title">نام</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" id="si2_name" />
+                </div>
+              </div>
+              <div class="singUp_page-box">
+                <div class="singUp_page-box-title">نام خانوادگی</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" id="si2_name_family" />
+                </div>
+              </div>
+              <div class="singUp_page-box sel">
+                <div class="singUp_page-box-title">جنسیت</div>
+                <div class="singUp_page-box-input">
+                  <input type="radio" name="singUp_gender" id="gender-male" />
+                  <label for="gender-male">مرد</label>
+                  <input type="radio" name="singUp_gender" id="gender-female" />
+                  <label for="gender-female">زن</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="singUp_page swiper-slide">
+            <h2 class="singUp_page-title">اطلاعات تماس</h2>
+            <div class="singUp_page-group pb">
+              <div class="singUp_page-box">
+                <div class="singUp_page-box-title">موبایل</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" class="signUp_mobile-input" id="si2_mo" onkeydown="mobile__validating()" />
+                </div>
+              </div>
+              <div class="singUp_mobile-validator">
+                <div class="mobile-validator firsterror">لطفا از حروف استفاده نکنید</div>
+                <div class="mobile-validator seconderror">شماره معتبر وارد کنید</div>
+                <div class="mobile-validator thirderror">شماره ی وارد شده مورد تایید میباشد</div>
+              </div>
+              <div class="singUp_page-box">
+                <div class="singUp_page-box-title">ایمیل</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" class="signUp_email-input" id="si2_email" onkeydown="email__validating()" />
+                </div>
+              </div>
+              <div class="singUp_email-validator">
+                <div class="email_validator-title">اعتبار ایمیل</div>
+                <div class="email_validator-confirm">
+                  <i class="fas fa-circle-check email-accept"></i>
+                  <i class="fas fa-circle-minus email-reject"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="singUp_page swiper-slide">
+            <h2 class="singUp_page-title">رمز ورود</h2>
+            <div class="singUp_page-group pb">
+              <div class="singUp_page-box">
+                <div class="singUp_page-box-title">نام کاربری</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" class="signUp_mobile-input" id="si2_username" />
+                </div>
+              </div>
+              <div class="singUp_page-box psw">
+                <div class="singUp_page-box-title">رمز</div>
+                <div class="singUp_page-box-input">
+                  <input type="text" class="signUp_password-input" id="si2_pass" onkeyup=" password_validator()"
+                    maxlength="22" />
+                </div>
+              </div>
+            </div>
+            <div class="double_tick">
+              <i class="fas fa-check-double"></i>
+            </div>
+          </div>
+        </form>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+      </section>
+      <div class="signUp_password-description">
+        <div class="i_close" style="--h: 4">
+          <i class="fas fa-close"></i>
+        </div>
+        <div class="default-strength-text" style="--h: 2"> قدرت رمز وارد شده <div class="strength-text" style="--h: 3">-
+          </div>
+        </div>
+        <div class="default-strength-color" style="--h: 1">
+          <div class="strength-color"></div>
+        </div>
+        <div class="bellow-title-description">
+          <p class="title-description" style="--h: 4">جهت بالا بردن امنیت صفحه ی شخصی خود <br />رعایت موارد زیر برای رمز
+            عبور الزامی میباشد<br /></p>
+          <p class="camel lowercase" style="--h: 5">از حروف کوچک انگلیسی استفاده کنید</p>
+          <p class="camel uppercase" style="--h: 6">از حروف بزرگ انگلیسی استفاده کنید</p>
+          <p class="camel number" style="--h: 7">از اعداد انگلیسی استفاده کنید</p>
+          <p class="camel special" style="--h: 8">از کاراکترهای خاص مثل @ # ...استفاده کنید</p>
+          <p class="camel length" style="--h: 9">رمز شما نباید از هشت حرف کمتر باشد</p>
+        </div>
+        <div class="generation">
+          <h6 style="--h: 10">در صورت تمایل میتوانید رمز اختصاصی خود را بسازید</h6>
+          <input type="button" class="btn_generate" value="ساخت رمز" style="--h: 11" />
+          <input type="text" placeholder="" class="input_generate" readonly="" style="--h: 12" id="si2_generate" />
+          <i class="fas fa-copy copy_generate" style="--h: 13"></i>
+        </div>
+        <div class="done_generate" style="--h: 14"></div>
+      </div>
+      <div class="popup">
+        <p>تمامی مراحل ثبت نام شما با موفقیت پایان یافت<br />وارد صفحه ی ورود میشوید</p>
+        <button>تایید</button>
+      </div>
+    </div>
+  </main>
+  <script src="../js/swiper/package/swiper-bundle.min.js"></script>
+  <script src="../js/changetheme.js" defer></script>
+  <script src="../js/signup.js" defer></script>
+</body>
+
+</html>

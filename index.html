@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>????</title>
+  <!-- <link rel="icon" href="" sizes="32*32">
+    <link rel="icon" href="" sizes="64*64">
+    <link rel="icon" href="" sizes="128*128">
+    <link rel="icon" href="" sizes="256*256"> -->
+  <link rel="stylesheet" href="./font/font-awesome/fontawesome-free-6.4.2-web/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" media="screen and (min-width:501px) and (max-width:768px)"
+    href="./mediaQuery/index/index-smartPhone.css" />
+  <link rel="stylesheet" media="screen and (min-width:769px) and (max-width:1024px)"
+    href="./mediaQuery/index/index-tablet.css" />
+  <link rel="stylesheet" media="screen and (min-width:1025px)" href="./mediaQuery/index/index-wideScreen.css" />
+</head>
+
+<body>
+  <header class="header pb">
+    <nav class="nav mi gr">
+      <div class="nav__holder">
+        <div class="nav__search">
+          <input type="text" name="nav__search-input" class="nav__search-text" placeholder="...جستجو" maxlength="20" />
+          <i class="fas fa-search nav__search-click"></i>
+        </div>
+        <div class="nav__city__container">
+          <div class="nav__city__title">
+            <div class="nav__city__title-name">انتخاب شهر</div>
+            <div class="nav__city__title-icon">
+              <i class="fas fa-chevron-down city_icon"></i>
+              <i class="fas fa-chevron-up city_icon"></i>
+            </div>
+          </div>
+          <div class="nav__city__search gr">
+            <input type="text" name="nav__city__name" class="nav__city__input" placeholder="...شهر" />
+          </div>
+          <div class="nav__city-name mb">
+            <div class="nav__city-name-holder pb">
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c1" value="c11" />
+                <label for="c1">آذربایجان شرقی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c2" value="c12" />
+                <label for="c2">آذربایجان غربی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c3" value="c13" />
+                <label for="c3">آذربایجان غربی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c4" value="c14" />
+                <label for="c4">اردبیل</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c5" value="c15" />
+                <label for="c5">اصفهان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c6" value="c16" />
+                <label for="c6">البرز</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c7" value="c17" />
+                <label for="c7">ایلام</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c8" value="c18" />
+                <label for="c8">بوشهر</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c9" value="c19" />
+                <label for="c9">تهران</label>
+              </div>
+              <div class="nav__city-name-option mic">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c10" value="c20" />
+                <label for="c10">چهارمحال و بختیاری</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c11" value="c21" />
+                <label for="c11">خراسان جنوبی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c12" value="c22" />
+                <label for="c12">خراسان رضوی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c13" value="c23" />
+                <label for="c13">خراسان شمالی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c14" value="c24" />
+                <label for="c14">خوزستان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c15" value="c25" />
+                <label for="c15">زنجان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c16" value="c26" />
+                <label for="c16">سمنان</label>
+              </div>
+              <div class="nav__city-name-option mic">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c17" value="c27" />
+                <label for="c17">سیستان و بلوچستان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c18" value="c28" />
+                <label for="c18">فارس</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c19" value="c29" />
+                <label for="c19">قزوین</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c20" value="c30" />
+                <label for="c20">قم</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c21" value="c31" />
+                <label for="c21">کردستان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c22" value="c32" />
+                <label for="c22">کرمان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c23" value="c33" />
+                <label for="c23">کرمانشاه</label>
+              </div>
+              <div class="nav__city-name-option mic">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c24" value="c34" />
+                <label for="c24">کهگیلویه و بویراحمد</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c25" value="c35" />
+                <label for="c25">گلستان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c26" value="c36" />
+                <label for="c26">گیلان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c27" value="c37" />
+                <label for="c27">لرستان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c28" value="c38" />
+                <label for="c28">مازندران</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c29" value="c39" />
+                <label for="c29">مرکزی</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c30" value="c40" />
+                <label for="c30">هرمزگان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c31" value="c41" />
+                <label for="c31">همدان</label>
+              </div>
+              <div class="nav__city-name-option">
+                <input type="radio" class="nav__city-name-radio" name="city" id="c32" value="c42" />
+                <label for="c32">یزد</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__brand">
+        <div class="nav__brand-name">Primus</div>
+        <div class="nav__brand-logo">
+          <i class="ri-fire-fill"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main_section mb">
+      <div class="main_aru1">
+        <ul class="gr">
+          <li style="--i: 0">
+            <a class="aru_title" href="#">
+              <i class="fas fa-car"></i>
+              <span class="sp">وسایل نقلیه</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-nagh.html" style="--j: 0">خودرو</a>
+            <a href="./html/around/showproduct-nagh.html" style="--j: 1">موتور سیکلت</a>
+            <a href="./html/around/showproduct-nagh.html" style="--j: 2">سایر</a>
+            <a href="#" style="--j: 3" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 1">
+            <a class="aru_title" href="#">
+              <i class="fas fa-home"></i>
+              <span class="sp">املاک</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-amk.html" style="--j: 0">مسکونی</a>
+            <a href="./html/around/showproduct-amk.html" style="--j: 1">اداری</a>
+            <a href="./html/around/showproduct-amk.html" style="--j: 2">تجاری</a>
+            <a href="./html/around/showproduct-amk.html" style="--j: 3">کشاورزی</a>
+            <a href="#" style="--j: 4" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 2">
+            <a class="aru_title" href="#">
+              <i class="fas fa-television"></i>
+              <span class="sp">لوازم برقی</span>
+            </a>
+          </li>
+          <div class="aru_detail cr">
+            <a href="./html/around/showproduct-bar.html" style="--j: 0">یخچال فریزر</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 1">تلویزیون</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 2">لباسشویی</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 3">ظرف شویی</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 4">آبمیوه گیری</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 5">خردکن</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 6">جارو برقی</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 7">غذاساز</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 8">اجاق گاز</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 9">چایی ساز</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 10">قهوه ساز</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 11">اتو</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 12">جارو شارژی</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 13">بخارشوی</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 14">هود</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 15">خشک کن</a>
+            <a href="./html/around/showproduct-bar.html" style="--j: 16">سایر</a>
+            <a href="#" style="--j: 17" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 3">
+            <a class="aru_title" href="#">
+              <i class="fas fa-laptop"></i>
+              <span class="sp">دیجیتال</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-dig.html" style="--j: 0">موبایل</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 1">کامپیوتر</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 2">لپتاپ</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 3">تبلت</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 4">مودم</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 5">اسکنر</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 6">پرینتر</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 7">دوربین عکاسی</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 8">فکس</a>
+            <a href="./html/around/showproduct-dig.html" style="--j: 9">دوربین فیلمبرداری</a>
+            <a href="#" style="--j: 10" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 4">
+            <a class="aru_title" href="#">
+              <i class="fas fa-bed"></i>
+              <span class="sp">لوازم منزل</span>
+            </a>
+          </li>
+          <div class="aru_detail cr cr2">
+            <a href="./html/around/showproduct-manz.html" style="--j: 0">لوازم آشپزخانه</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 1">مبلمان</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 2">فرش</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 3">اتاق خواب</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 4">تزیینی</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 5">سرویس بهداشتی</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 6">حمام</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 7">کولر آبی</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 8">کولر گازی</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 9">پنکه</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 10">چرخ خیاطی</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 11">بخاری </a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 12">آبگرمکن </a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 13"> پکیج</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 14">شوفاژ</a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 15">تصفیه کننده هوا </a>
+            <a href="./html/around/showproduct-manz.html" style="--j: 16">تصفیه کننده آب </a>
+            <a href="#" style="--j: 17" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 5">
+            <a class="aru_title" href="#">
+              <i class="fas fa-calculator"></i>
+              <span class="sp">لوازم اداری</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-eda.html" style="--j: 0">مبلمان اداری</a>
+            <a href="./html/around/showproduct-eda.html" style="--j: 1">تجهیزات اداری</a>
+            <a href="#" style="--j: 2" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 6">
+            <a class="aru_title" href="#">
+              <i class="fas fa-street-view"></i>
+              <span class="sp">پوشاک</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-psh.html" style="--j: 0">لباس-مردانه</a>
+            <a href="./html/around/showproduct-psh.html" style="--j: 1">لباس-زنانه</a>
+            <a href="./html/around/showproduct-psh.html" style="--j: 2">کیف کفش کمربند-مردانه</a>
+            <a href="./html/around/showproduct-psh.html" style="--j: 3">کیف کفش کمربند-زنانه</a>
+            <a href="#" style="--j: 4" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 7">
+            <a class="aru_title" href="#">
+              <i class="fas fa-briefcase"></i>
+              <span class="sp">لوازم شخصی</span>
+            </a>
+          </li>
+          <div class="aru_detail">
+            <a href="./html/around/showproduct-sha.html" style="--j: 0">کتاب</a>
+            <a href="./html/around/showproduct-sha.html" style="--j: 1">جواهرات</a>
+            <a href="./html/around/showproduct-sha.html" style="--j: 2">ساعت</a>
+            <a href="./html/around/showproduct-sha.html" style="--j: 3">بدلیجات</a>
+            <a href="./html/around/showproduct-sha.html" style="--j: 4">لوازم التحریر</a>
+            <a href="./html/around/showproduct-sha.html" style="--j: 5">اسباب بازی</a>
+            <a href="#" style="--j: 6" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 8">
+            <a class="aru_title" href="#">
+              <i class="fas fa-bicycle"></i>
+              <span class="sp">لوازم ورزشی و کمپینگ</span>
+            </a>
+          </li>
+          <div class="aru_detail cr cr2">
+            <a href="./html/around/showproduct-var.html" style="--j: 0">تجهیزات غواصی</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 1">تجهیزات ماهیگیری</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 2">تجهیزات شنا</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 3">تجهیزات سوارکاری</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 4">تجهیزات کوهنوردی</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 5">تجهیزات تناسب اندام</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 6">تجهیزات کمپینگ</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 7"> ورزش های توپی</a>
+            <a href="./html/around/showproduct-var.html" style="--j: 8"> ورزش های زمستانی</a>
+            <a href="#" style="--j: 9" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 9">
+            <a class="aru_title" href="#">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="sp">صنایع دستی</span>
+            </a>
+          </li>
+          <div class="aru_detail cr">
+            <a href="./html/around/showproduct-sand.html" style="--j: 0">دست بافت</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 1">سفالگری</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 2">مینا سازی</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 3">منبت کاری</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 4">خاتم سازی</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 5">آبگینه</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 6">فلزی</a>
+            <a href="./html/around/showproduct-sand.html" style="--j: 7">سنگ</a>
+            <a href="#" style="--j: 8" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 10">
+            <a class="aru_title" href="#">
+              <i class="fas fa-fire-extinguisher"></i>
+              <span class="sp">تجهیزات صنعتی</span>
+            </a>
+          </li>
+          <div class="aru_detail cr">
+            <a href="./html/around/showproduct-taj.html" style="--j: 0">کارخانه</a>
+            <a href="./html/around/showproduct-taj.html" style="--j: 1">پزشکی </a>
+            <a href="./html/around/showproduct-taj.html" style="--j: 2"> ماشین آلات صنعتی</a>
+            <a href="./html/around/showproduct-taj.html" style="--j: 3">ماشین آلات کشاورزی</a>
+            <a href="./html/around/showproduct-taj.html" style="--j: 4">کشاورزی</a>
+            <a href="./html/around/showproduct-taj.html" style="--j: 5">ابزارآلات </a>
+            <a href="#" style="--j: 6" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 11">
+            <a class="aru_title" href="#">
+              <i class="fas fa-music"></i>
+              <span class="sp">آلات موسیقی</span>
+            </a>
+          </li>
+          <div class="aru_detail cr2">
+            <a href="./html/around/showproduct-mus.html" style="--j: 0">سازهای بادی</a>
+            <a href="./html/around/showproduct-mus.html" style="--j: 1">سازهای زهی</a>
+            <a href="./html/around/showproduct-mus.html" style="--j: 2">سازهای کوبه ای</a>
+            <a href="./html/around/showproduct-mus.html" style="--j: 3">پیانو-کیبورد</a>
+            <a href="./html/around/showproduct-mus.html" style="--j: 4">لوازم جانبی</a>
+            <a href="./html/around/showproduct-mus.html" style="--j: 5">سایر</a>
+            <a href="#" style="--j: 6" class="aru_detail-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <div class="main_aru2">
+        <ul class="gr">
+          <li style="--i: 12">
+            <a href="#">
+              <i class="fas fa-car"></i>
+            </a>
+          </li>
+          <li style="--i: 13">
+            <a href="#">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li style="--i: 14" class="aru2_re">
+            <a class="setting" href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li style="--i: 15" class="aru2_re aru_si">
+            <a class="sign_in" href="#">
+              <i class="fas fa-sign-in"></i>
+            </a>
+          </li>
+          <div class="sign_in-detail">
+            <h3>خوش آمدید</h3>
+            <div class="sign_in-info">
+              <div class="sign_in-info-title">موبایل</div>
+              <div class="sign_in-info-input">
+                <input type="text" class="input_phone" id="si_mo" />
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+            <div class="sign_in-info">
+              <div class="sign_in-info-title">رمز ورود</div>
+              <div class="sign_in-info-input">
+                <input type="password" class="input_pass" id="si_pass" />
+                <i class="fas fa-key"></i>
+                <div class="sign_in-eye">
+                  <i class="fas fa-eye-slash eye_one"></i>
+                  <i class="fas fa-eye eye_two"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sign_in-save-pass"><input type="checkbox" id="si_save_pass" />ذخیره رمز ورود</div>
+            <div class="sign_in-ari-reg">
+              <a href="./html/profile.html" class="sign_in-btn-arrive">ورود</a>
+              <a href="./html/signup.html" class="sign_in-register">ثبت نام</a>
+            </div>
+            <div class="sign_in-forget-pass">
+              <a href="#">فراموشی رمز عبور</a>
+              <div class="sign_in-forget-pass-page">
+                <h4>لطفا شماره موبایل یا ایمیل خود را وارد کنید</h4>
+                <input type="text" id="forget_p" class="sign_in-forget-pass-input">
+                <i class="fas fa-close"></i>
+                <input type="submit" id="forget_p_s" class="sign_in-forget-pass-submit" value="تایید">
+                <span>رمز عبور جدید ارسال شد وارد صفحه ی اصلی میشوید</span>
+              </div>
+            </div>
+            <a href="#" style="--j: 4" class="sign_ing-close">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <li style="--i: 16" class="aru2_re">
+            <a class="sun_moon a_esc" href="#">
+              <i class="ri-moon-line" id="moon-button"></i>
+            </a>
+          </li>
+          <li style="--i: 17">
+            <a href="#">
+              <i class="fas fa-calculator"></i>
+            </a>
+          </li>
+          <li style="--i: 18">
+            <a href="#">
+              <i class="fas fa-street-view"></i>
+            </a>
+          </li>
+          <li style="--i: 19">
+            <a href="#">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li style="--i: 20">
+            <a href="#">
+              <i class="fas fa-bicycle"></i>
+            </a>
+          </li>
+          <li style="--i: 21">
+            <a href="#">
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+          <li style="--i: 22">
+            <a href="#">
+              <i class="fas fa-music"></i>
+            </a>
+          </li>
+          <li style="--i: 23">
+            <a href="#">
+              <i class="fas fa-car"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="./js/changetheme.js"></script>
+  <script src="./js/main.js" defer></script>
+</body>
+
+</html>

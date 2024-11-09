@@ -1,0 +1,11 @@
+.singUp_above {
+    width: 22rem;
+}
+
+.singUp_title-num::before {
+    width: 6rem;
+}
+
+.popup {
+    width: 26rem;
+}

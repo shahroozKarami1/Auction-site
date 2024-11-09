@@ -1,0 +1,79 @@
+.main_section {
+  top: 14rem;
+}
+
+.main_aru1 ul li {
+  transform-origin: 15rem;
+  margin-right: 24.5rem;
+  margin-top: 4rem;
+}
+
+.main_aru2 ul li {
+  transform-origin: 17rem;
+  margin-right: 28.5rem;
+}
+
+.aru_title {
+  width: 5rem;
+}
+
+.main_aru2 ul li a {
+  width: 5rem;
+}
+
+.main_aru2 .aru2_re a i {
+  font-size: var(--h1-font-size);
+}
+
+.main_aru2 .aru2_re .a_esc i {
+  font-size: 1.9rem;
+}
+
+.aru_title i {
+  font-size: var(--h1-font-size);
+}
+
+.aru_title span {
+  font-size: var(--small-font-size);
+}
+
+.aru_detail {
+  width: 27rem;
+  height: 27rem;
+  margin-top: 4rem;
+}
+
+.main_aru2 .sign_in-detail {
+  width: 27rem;
+  height: 27rem;
+  margin-top: 4rem;
+}
+
+.sign_in-detail h3 {
+  top: -3rem;
+  font-size: var(--normal-font-size);
+}
+
+.sign_ing-close {
+  position: relative;
+  top: 2rem;
+}
+
+.sign_in-forget-pass-page {
+  width: 20rem;
+  height: 7rem;
+}
+
+.sign_in-forget-pass-page h4 {
+   font-size: var(--small-font-size);
+}
+
+.sign_in-forget-pass-page .sing_in-forget-pass-input {
+  width: 80%;
+}
+
+.sign_in-forget-pass-page span {
+  bottom: 0.2rem;
+  width: 80%;
+  font-size: 0.6rem;
+ }
